@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="end time" type="D" value="44542.8691972106"/>
+				<Prp name="start time" type="D" value="44542.8690703819"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{14CB5A82-2CC2-44F2-BEBE-074939A0B64D}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="name" type="S" value="Testar valor igual a sete mil e um para para o produto [Script\ProdutoTest - testValidarValorSeteMilEUmCentavoDoProduto]"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="end time" type="D" value="44542.8690703704"/>
+				<Prp name="start time" type="D" value="44542.8689820486"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{A60BC56D-C32D-40F6-AFE0-745B69935F6C}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="name" type="S" value="Testar valor igual a zero para o produto [Script\ProdutoTest - testValidarValorZeroDoProduto]"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>
